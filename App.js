@@ -11,6 +11,9 @@ import {
   ThemeOverrideChoicesList,
 } from './src/components/';
 
+// Constants
+import {GRAY_4} from './src/constants/colors';
+
 // Hooks
 import {useSelector} from 'react-redux';
 
@@ -18,7 +21,6 @@ import {useSelector} from 'react-redux';
 import {Provider} from 'react-redux';
 import {selectChosenOverrideThemeID} from './src/redux/reducers/themesReducer';
 import store from './src/redux/store';
-import {GRAY_4} from './src/constants/colors';
 
 const AppScreens = () => {
   const chosenOverrideThemeID = useSelector(selectChosenOverrideThemeID);
